@@ -4,6 +4,7 @@ const lightboxImage = document.querySelector(".lightbox__image");
 
 gallery.addEventListener("click",(e) => {
   if(e.target.nodeName === "IMG"){
+    e.preventDefault();
     const dataSource = e.target.dataset.source;
     lightboxImage.setAttribute("src", dataSource);
     lightbox.classList.add("is-open");
