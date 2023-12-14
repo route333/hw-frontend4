@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./hw2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <!-- // завдання 1 -->
-    <div class="slider">
-        <input type="range" min="1" max="100" value="50" class="slider__input">
-        <img src="https://via.placeholder.com/300x300" class="slider__image">
-      </div>
-      <!-- // завдання 2 -->
-      <div id="box"></div>
+    <link rel="stylesheet" href="./hw3.css" />
+  </head>
+  <body>
+    <button id="load-btn">Load Images</button>
 
-    <script src="./hw2.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-</body>
+    <ul class="img__list">
+      <li class="img__item">
+        <img
+          data-src="./images/food-dinner-lunch-unhealthy-70497.jpg"
+          loading="lazy"
+          alt=""
+          class="lazy-load"
+        />
+      </li>
+      <li class="img__item">
+        <img
+          data-src="./images/food-plate-chocolate-dessert-132694.jpg"
+          loading="lazy"
+          alt=""
+          class="lazy-load"
+        />
+      </li>
+      <li class="img__item">
+        <img
+          data-src="./images/selective-focus-photography-of-beef-steak-with-sauce-675951.jpg"
+          loading="lazy"
+          alt=""
+          class="lazy-load"
+        />
+      </li>
+      <li class="img__item">
+        <img
+          data-src="./images/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330.jpg"
+          loading="lazy"
+          alt=""
+          class="lazy-load"
+        />
+      </li>
+      <li class="img__item">
+        <img
+          data-src="./images/sliced-vegetable-and-cooked-food-on-white-ceramic-plate-1234535.jpg"
+          loading="lazy"
+          alt=""
+          class="lazy-load"
+        />
+      </li>
+    </ul>
+
+    <script src="./hw3.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
 </html>
